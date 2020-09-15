@@ -1,0 +1,31 @@
+<div id="data">
+    <h1>Contact</h1>
+</div>
+
+<div id="content">
+    <form #contact="ngForm" [formGroup]="contactForm" (ngSubmit)="sendEmail(contactForm.value)" novalidate>
+        <label for="name">Enter your name</label>
+        <input formControlName='name' type="text" placeholder="Name">
+        <div class="validating">
+            <span *ngIf="contactForm.get('name')?.touched && contactForm.get('name').hasError('required')">Name is required</span>
+        </div>
+        <label for="lastname">Enter your last name</label>
+        <input formControlName='lastname' type="text" placeholder="Last Name">
+        <div class="validating">
+            <span *ngIf=" contactForm.get('lastname')?.touched && contactForm.get('lastname').hasError('required')">Last name is required</span>
+        </div>
+        <label for="email">Enter your email</label>
+        <input formControlName='email' type="email" placeholder="Email" name="email">
+        <div class="validating">
+            <span *ngIf="contactForm.get('email')?.touched && contactForm.get('email').hasError('required')">Email is required</span>
+            <span *ngIf="contactForm.get('email')?.touched && contactForm.get('email').hasError('email')">Write a valid email</span>
+        </div>
+        <label for="Message">Write the message you want</label>
+        <textarea formControlName='message' cols="30" rows="10" placeholder="Message"></textarea>
+        <div class="validating">
+            <span *ngIf="contactForm.get('message')?.touched && contactForm.get('message').hasError('required')">Message is required</span>
+        </div>
+        <span></span>
+        <input id="submit" type="submit" value="Submit" [disabled]="contactForm.invalid">
+    </form>
+</div>

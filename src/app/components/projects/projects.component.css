@@ -1,0 +1,96 @@
+#data {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid blue;
+}
+
+h1 {
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+}
+
+#contain {
+    display: block;
+    width: 100%;
+    height: 380px;
+    margin: 0px auto;
+    margin-top: 25px;
+    overflow-y: scroll;
+}
+
+#project {
+    float: left;
+    height: 360px;
+    width: 29%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-left: 27px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(39, 39, 39, 0.89);
+    font-family: Helvetica, sans-serif;
+    transition: 400ms;
+}
+
+#project a {
+    text-decoration: none;
+    color: white;
+    transition: 400ms;
+}
+
+#project:hover,
+#project a:hover {
+    transform: scale(1.15, 1.15);
+    background-color: rgba(255, 255, 0, 0.767);
+    color: black;
+}
+
+#image {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+@media (max-width: 1250px) {
+    #project {
+        width: 28%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #project {
+        width: 27%;
+    }
+}
+
+@media (max-width: 860px) {
+    #project {
+        width: 40%;
+    }
+}
+
+@media (max-width: 750px) {
+    #contain {
+        height: 450px;
+    }
+    #project {
+        height: 420px;
+    }
+}
+
+@media (max-width: 550px) {
+    #project {
+        width: 90%;
+    }
+}

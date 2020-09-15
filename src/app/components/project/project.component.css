@@ -1,0 +1,162 @@
+#data {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid blue;
+}
+
+h1 {
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+}
+
+#data button {
+    float: right;
+    width: 70px;
+    height: 25px;
+    font-size: 18px;
+    margin-top: -80px;
+    margin-right: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#data button:hover {
+    background-color: rgb(255, 255, 0);
+    transform: scale(1.1, 1.1);
+}
+
+#info {
+    height: 500px;
+}
+
+#info img {
+    margin: 30px 25px;
+    border: 1px solid white;
+    float: left;
+}
+
+#charac {
+    width: 40%;
+    height: 390px;
+    float: right;
+    margin-right: 25px;
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+#charac h2 {
+    font-size: 35px;
+}
+
+#charac span {
+    color: yellow;
+}
+
+#charac h3 {
+    font-size: 25px;
+}
+
+#charac h4 {
+    font-size: 22px;
+}
+
+#charac p {
+    font-size: 20px;
+}
+
+#charac button {
+    margin-left: 130px;
+    margin-top: 30px;
+    width: 150px;
+    height: 32px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#charac button:hover {
+    background-color: rgb(255, 255, 0);
+    transform: scale(1.1, 1.1);
+}
+
+@media (max-width:1350px) {
+    #info img {
+        height: 300px;
+    }
+}
+
+@media (max-width:1250px) {
+    #info img {
+        height: 280px;
+    }
+}
+
+@media (max-width:1100px) {
+    #info img {
+        height: 250px;
+        margin: 45px 2%;
+    }
+}
+
+@media (max-width:990px) {
+    #info img {
+        height: 200px;
+    }
+    #charac h2 {
+        font-size: 30px;
+    }
+    #charac h3 {
+        font-size: 22px;
+    }
+    #charac h4 {
+        font-size: 20px;
+    }
+    #charac p {
+        font-size: 18px;
+    }
+    #charac button {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width:850px) {
+    #info {
+        margin: 20px 25px;
+        height: 450px;
+        overflow-y: scroll;
+    }
+    img {
+        width: 90%;
+        height: 350px;
+    }
+    #charac {
+        float: left;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:750px) {
+    #data button {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    #data h1 {
+        font-size: 35px;
+    }
+}

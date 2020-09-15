@@ -1,0 +1,18 @@
+<div id="data">
+
+    <h1>{{r_project.name}}</h1>
+    <a [routerLink]="['../']"> <button>Return</button></a>
+</div>
+<div id="info">
+    <div id="i_img">
+        <img src="{{url + '/get-image/'+ r_project.image}}" height="350px">
+    </div>
+    <div id="charac">
+        <h2><span>Author:</span> {{r_project.author}}</h2>
+        <h3><span>Year:</span> {{r_project.year}}</h3>
+        <h4><span>Technology:</span> {{r_project.technology}}</h4>
+        <p>{{r_project.description}}</p>
+        <a href="{{r_project.link}}" target="_blank" *ngIf=r_project.link><button>Visit the site</button></a>
+    </div>
+
+</div>
