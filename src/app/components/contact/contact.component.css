@@ -92,7 +92,7 @@ form textarea {
 @media (max-width: 750px) {
     #content {
         overflow-y: scroll;
-        height: 500px;
+        height: 400px;
     }
     form {
         grid-template-columns: 100%;
