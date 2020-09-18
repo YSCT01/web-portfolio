@@ -41,15 +41,14 @@
         padding: 0px;
         text-align: center;
         font-family: sans-serif;
-        float: left;
     }
     
     #content h3 {
-        font-size: 40px;
+        font-size: 35px;
     }
     
     #content h4 {
-        font-size: 22px;
+        font-size: 20px;
         color: rgb(155, 155, 155)
     }
     
@@ -75,6 +74,26 @@
         transform: scale(1.2, 1.2);
     }
     
+    #social {
+        display: grid;
+        width: 100%;
+        margin-top: 25px;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: space-evenly;
+    }
+    
+    #social a {
+        color: white;
+        font-size: 45px;
+        text-decoration: none;
+        transition:400ms;
+    }
+
+    #social a:hover{
+        color: yellow;
+        transform:scale(1.2, 1.2);
+    }
+    
     @media (max-width:500px) {
         h1 {
             font-size: 40px;
@@ -90,5 +109,8 @@
         }
         h1 a:hover {
             font-size: 50px;
+        }
+        #social a {
+            font-size: 35px;
         }
     }

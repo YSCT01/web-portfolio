@@ -3,6 +3,7 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 import { elementEventFullName } from '@angular/compiler/src/view_compiler/view_compiler';
 import { getLocaleId } from '@angular/common';
 import { isGeneratedFile } from '@angular/compiler/src/aot/util';
+import { faBars} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -14,6 +15,7 @@ import { isGeneratedFile } from '@angular/compiler/src/aot/util';
 export class AppComponent {
   title = 'Portfolio';
  button = false;
+ faBars = faBars;
 
   menuOpen(){
     if(this.button){
